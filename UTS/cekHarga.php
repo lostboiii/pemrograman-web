@@ -16,7 +16,7 @@ if(!isset($_SESSION["username"])){
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.php">Laundry XYZ</a>
+                <a class="navbar-brand" href="home.php">Laundry Niggies</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -69,12 +69,12 @@ if(!isset($_SESSION["username"])){
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h5>Laundry XYZ</h5>
+                <h5>Laundry Niggies</h5>
                 <p>I wish you wash here.</p>
             </div>
         <hr>
         <div class="text-center">
-            <p>&copy; 2024 Laundry XYZ. All rights reserved.</p>
+            <p>&copy; 2024 Laundry Niggies. All rights reserved.</p>
         </div>
     </div>
 </footer>

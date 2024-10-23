@@ -15,7 +15,9 @@ if(!isset($_SESSION["username"])){
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Laundry XYZ</a>
+                <a class="navbar-brand" href="#">Laundry Niggies
+                    
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,12 +61,16 @@ if(!isset($_SESSION["username"])){
 </div>
 <div class="container mt-4">
     <h1>Selamat datang, <?php echo $_SESSION["username"]; ?></h1>
-    <h2 class="text-center">Laundry XYZ</h2>
-    <p>Laundry XYZ adalah perusahaan laundry dengan lebih dari 10 tahun pengalaman yang berkomitmen untuk memberikan pelayanan berkualitas tinggi kepada pelanggan. Kami menawarkan berbagai layanan, seperti cuci pakaian sehari-hari, dry cleaning, setrika, dan layanan antar jemput. Teknologi modern yang kami gunakan, termasuk mesin cuci dan pengering canggih, serta produk ramah lingkungan, memastikan setiap cucian ditangani dengan hati-hati dan bersih maksimal.
+    <h2 class="text-center">Laundry Niggies
+        
+    </h2>
+    <p>Laundry Niggies
+         adalah perusahaan laundry dengan lebih dari 10 tahun pengalaman yang berkomitmen untuk memberikan pelayanan berkualitas tinggi kepada pelanggan. Kami menawarkan berbagai layanan, seperti cuci pakaian sehari-hari, dry cleaning, setrika, dan layanan antar jemput. Teknologi modern yang kami gunakan, termasuk mesin cuci dan pengering canggih, serta produk ramah lingkungan, memastikan setiap cucian ditangani dengan hati-hati dan bersih maksimal.
 
 Selain itu, layanan dry cleaning kami sangat cocok untuk pakaian formal yang memerlukan perawatan khusus, seperti jas dan gaun. Kami juga menyediakan layanan setrika yang membuat pakaian bebas kerutan dan tampak seperti baru. Untuk kemudahan, kami menawarkan layanan antar jemput gratis, ideal bagi pelanggan dengan jadwal sibuk.
 
-Pelanggan kami dapat menikmati layanan profesional yang didukung oleh tim ahli. Kami juga peduli terhadap lingkungan dengan menggunakan deterjen yang aman dan hemat energi. Laundry XYZ terus berinovasi dengan memperbarui teknologi dan meluncurkan aplikasi mobile yang memungkinkan pelanggan memesan layanan secara online, menjadikan kami pilihan terbaik untuk kebutuhan laundry mereka.</p>
+Pelanggan kami dapat menikmati layanan profesional yang didukung oleh tim ahli. Kami juga peduli terhadap lingkungan dengan menggunakan deterjen yang aman dan hemat energi. Laundry Niggies
+ terus berinovasi dengan memperbarui teknologi dan meluncurkan aplikasi mobile yang memungkinkan pelanggan memesan layanan secara online, menjadikan kami pilihan terbaik untuk kebutuhan laundry mereka.</p>
 
 <div class="container mt-4">
     <h2 class="text-center">Layanan kami</h2>
@@ -113,12 +119,15 @@ Pelanggan kami dapat menikmati layanan profesional yang didukung oleh tim ahli. 
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h5>Laundry XYZ</h5>
+                <h5>Laundry Niggies
+                    
+                </h5>
                 <p>I wish you wash here.</p>
             </div>
         <hr>
         <div class="text-center">
-            <p>&copy; 2024 Laundry XYZ. All rights reserved.</p>
+            <p>&copy; 2024 Laundry Niggies
+                . All rights reserved.</p>
         </div>
     </div>
 </footer>

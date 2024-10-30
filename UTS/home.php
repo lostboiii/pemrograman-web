@@ -13,7 +13,7 @@ if(!isset($_SESSION["username"])){
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top py-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Laundry Niggies
                     

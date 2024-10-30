@@ -16,12 +16,12 @@
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary py-3">
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1">Laundry Niggies</span>
   </div>
 </nav>
-        <div class="container" style="width: 500px; border: 1px solid black; padding: 20px; margin: 20 auto; border-radius: 10px; background-color: #f8f9fa;">
+        <div class="container" style="width: 500px; border: 1px solid black; padding: 50px; margin: 20 auto; border-radius: 10px; background-color: #f8f9fa;">
             <div class="row">
                 <div class="col-md-12">
                     <img src="img/aku bang kryu.jpg" alt="Login Image" class="img-fluid" style="max-height: 400px; display: flex; margin: 0 auto;">

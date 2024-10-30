@@ -4,6 +4,15 @@ if(!isset($_SESSION["username"])){
     session_destroy();  
     header("Location: login.php");
 }
+
+if (!isset($_SESSION["count"])) {
+    $_SESSION["count"] = 0;
+}
+
+$_SESSION["count"]++;
+
+
+$kupon = ($_SESSION["count"] % 6 == 0);
 ?>
 <html>
 
@@ -14,7 +23,7 @@ if(!isset($_SESSION["username"])){
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary py-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.php">Laundry Niggies</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +49,7 @@ if(!isset($_SESSION["username"])){
     <form id="formHarga">
         <div class="mb-3">
             <label for="berat" class="form-label">Berat pakaian</label>
-            <input type="number" name="berat" id="berat" class="form-control">
+            <input type="number" name="berat" id="berat" class="form-control" min="0">
             <label for="jenis" class="form-label">Jenis pakaian</label>
             <select name="jenis" id="jenis" class="form-select">
                 <option value="kering">Cuci Kering</option>
@@ -56,6 +65,11 @@ if(!isset($_SESSION["username"])){
             <select name="diskon" id="diskon" class="form-select">
                 <option value="nonMember">Non Member</option>
                 <option value="member">Member</option>
+                <?php
+                if ($kupon) {
+                    echo '<option value="kupon">Kupon</option>';
+                }
+                ?>
             </select>
             <div id="hasil"></div>
             <button type="submit" class="btn btn-primary mt-4 w-100">Cek harga</button>

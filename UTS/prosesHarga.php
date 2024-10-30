@@ -6,21 +6,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $diskon = $_POST["diskon"];
 
     if($jenis == "kering"){
-        $hargaCuci = 5000*$berat;
+        $hargaCuci = 5000;
+        $cuciTotal = $hargaCuci*$berat;
     }
     else if($jenis == "setrika"){
-        $hargaCuci = 6000*$berat;
+        $hargaCuci = 6000;
+        $cuciTotal = $hargaCuci*$berat;
     }
     else if($jenis == "kering+setrika"){
-        $hargaCuci = 8000*$berat;
+        $hargaCuci = 8000;
+        $cuciTotal = $hargaCuci*$berat;
     }
-
+    
+    $hargaKec = 0;
+    
     if($kecepatan == "ekspress"){
         $hargaKec = 2000*$berat;
     }
-    $totalHarga = $hargaCuci + $hargaKec;
+    $totalHarga = $cuciTotal + $hargaKec;
     if($diskon == "member"){
         $hargaDiskon = $totalHarga * 0.9;
+    }
+    else if($diskon == "kupon"){
+        $diskonBerat = max(0, $berat - 2);
+        $hargaDiskon = $totalHarga - ($hargaCuci * $diskonBerat);
     }
     else{
         $hargaDiskon = $totalHarga;

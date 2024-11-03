@@ -27,8 +27,19 @@ else if($aksi == 'ubah'){
             echo "Gagal mengubah data: ". mysqli_error($connect);
         }
     }
+    mysqli_close($connect);
 }
-
-
-mysqli_close($connect);
+else if($aksi == 'hapus'){
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+        $query = "DELETE FROM anggota WHERE id=$id";
+        if(mysqli_query($connect, $query)){
+            header("Location: index.php");
+            exit();
+        }else{
+            echo "Gagal menghapus data: ". mysqli_error($connect);
+        }
+    }
+    mysqli_close($connect);
+}
 ?>

@@ -2,6 +2,7 @@
         <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B0R+wY81Q29xVfL89J6cB0xIM+BSUhw6d6iXa" crossorigin="anonymous">
     <!-- Font Awesome -->
+     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZv1g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g" crossorigin="anonymous">
         </head>
         <body>
@@ -57,7 +58,7 @@
             </tbody>
         </table>
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(function() {
                 $('#example').DataTable();
             
             function reset(){
@@ -90,6 +91,20 @@
         }
     });
 });
+$(document).on('click', '.hapus_data',function(){
+var id = $(this).attr('id');
+        $.ajax({
+            url: "hapus_data.php",
+            type: "POST",
+            data: {id: id},
+            success: function(response){
+                $('.data').load('data.php');
+            },
+            error: function(response){
+                console.log(response.responseText);
+            }
+        });
+})
 });
         </script>
         </body>

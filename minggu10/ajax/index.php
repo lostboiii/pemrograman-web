@@ -38,7 +38,7 @@ include 'auth.php';
             </div>
             <div class="col-sm-3">
                 <div class="form-group">
-                    <label for="jenis_kelamin"></label><br>
+                    <label for="jenis_kelamin">Jenis Kelamin</label><br>
                     <input type="radio" class="form-check-input" id="jenkel1" name="jenis_kelamin" value="L" required> Laki-laki
                     <input type="radio" class="form-check-input" id="jenkel2" name="jenis_kelamin" value="P"> Perempuan
                 </div>

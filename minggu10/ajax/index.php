@@ -121,7 +121,7 @@ include 'auth.php';
                         $('.form-data').reset();
 
                     }, error: function(response){
-                        console.log(response,responseText);
+                        console.log(response,responseText);  
                     } 
                 });
             }
@@ -131,7 +131,7 @@ include 'auth.php';
                     'X-CSRF-Token': $('meta[name="csrf_token"]').attr('content')
                 }
             })
-            $('.data').load('data.php');
+            $('.data').load('data.php'); 
         })
      </script>
 </body>

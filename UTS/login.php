@@ -83,7 +83,6 @@
                         type: "POST",
                         data: formData,
                         success: function(response){
-                         
                             window.location.href = "home.php";
                         },
                         error: function(){

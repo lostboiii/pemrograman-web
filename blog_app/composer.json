@@ -1,0 +1,17 @@
+{
+    "name": "user/blog_app",
+    "autoload": {
+        "psr-4": {
+            "User\\BlogApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lostboiii",
+            "email": "dafasetiadi55@gmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.20"
+    }
+}

@@ -27,7 +27,7 @@ $tampil = $crud->read();
 </head>
 <body>
     <div class="container mt-5">
-        <!-- Add this button to trigger modal -->
+      
         <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#tambahModal">
             Tambah Data Jabatan
         </button>
